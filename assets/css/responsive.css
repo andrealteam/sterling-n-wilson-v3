@@ -44,11 +44,57 @@
   }
 
 }
+@media (max-width: 1800px) {
+  .banner-section h1{
+    font-size: 85px;
+  }.about-text{
+    top: 8%;
+  }
+}
+@media (max-width: 1750px) {
+  .about-text{
+    top: 6%;
+  }
+}
+@media (max-width: 1700px) {
+  .banner-section h1{
+    font-size: 80px;
+  }.key-box h3 {
+    font-size: 25px;
+}.key-box h3 span {
+    font-size: 40px;
+}.bg-title{
+  font-size: 2.7rem;
+}.awards-text{
+    padding: 25px 10px;
+  }.awards-card h5{
+    font-size: 13px;
+  }
+}
 
-@media (max-width: 1650px) {}
+@media (max-width: 1650px) {
+   .banner-section h1{
+    font-size: 75px;
+  }.about-text{
+    top: 5%;
+  }.high {
+    font-size: 18px;}
+}
 
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+    .banner-section h1{
+    font-size: 70px;
+  }.chairman-icon img {
+    width: 690px;
+}
+}
 
+@media (max-width: 1500px) {
+  .high {
+    font-size: 16px;}.chairman-icon img {
+    width: 700px;
+}
+}
 @media (max-width: 1440px) {
 
   .navbar-brand img {
@@ -161,10 +207,22 @@
 
   .custom-container3 {
     padding-right: 59.5px;
+  }.senior-box{
+    gap: 10px!important;
+  }.senior-cards{
+    padding: 15px;
+  }.awards-card h5{
+    font-size: 12px;
   }
 }
 
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+  .senior-box{
+    gap: 5px!important;
+  }.senior-box .senior-icon {
+    width: 15px;
+  }
+}
 
 @media (max-width: 1300px) {
   .navbar-expand-lg .navbar-nav .nav-link {
