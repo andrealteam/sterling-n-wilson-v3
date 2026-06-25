@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
-    smooth: 3,        // higher = smoother
-    effects: true,      // enables data-speed & data-lag
-    smoothTouch: 0.1    // smooth scrolling on touch devices
+    smooth: 1,      
+    effects: true,   
+    smoothTouch: 0.1   
   });
   gsap.from(".text-anim", {
     y: 40,
@@ -110,43 +110,47 @@ $(".gallery-text").magnificPopup({
 });
 
 const swiper = new Swiper(".journeySwiper", {
-
   slidesPerView: 7,
   centeredSlides: true,
+  slideToClickedSlide: true,
 
   spaceBetween: 80,
-
-  loop: true,
-  autoplay: {
-    delay: 4000
-  },
+  // loop: true,
   speed: 700,
 
   breakpoints: {
-
     320: {
-      slidesPerView: 1.2
+      slidesPerView: 1.2,
     },
-
     768: {
-      slidesPerView: 7
-    }
-  }
+      slidesPerView: 7,
+    },
+    
+    1200: {
+      slidesPerView: 5,
+    },
+    1700: {
+      slidesPerView: 5,
+    },
+    1800: {
+      slidesPerView: 7,
+    },
+  },
 });const testimonialSwiper = new Swiper(".testimonialSwiper", {
 
   slidesPerView: 1.2,
 
   centeredSlides: true,
 
-  loop: true,
+  // loop: true,
 
   speed: 700,
 
   spaceBetween: 30,
 
-  autoplay: {
-    delay: 4000
-  },
+  // autoplay: {
+  //   delay: 4000
+  // },
 
   breakpoints: {
 
@@ -168,9 +172,9 @@ const swiper = new Swiper(".journeySwiper", {
 
   spaceBetween: 30,
 
-  autoplay: {
-    delay: 3000
-  },
+  // autoplay: {
+  //   delay: 3000
+  // },
 
  
 });
