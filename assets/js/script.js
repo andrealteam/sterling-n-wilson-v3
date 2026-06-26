@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
   ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
-    smooth: 1,      
-    effects: true,   
-    smoothTouch: 0.1   
+    smooth: 1,
+    effects: true,
+    smoothTouch: 0.1
   });
   gsap.from(".text-anim", {
     y: 40,
@@ -104,6 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
 }); $(".pop-video").magnificPopup({ type: "iframe" });
 $(".gallery-text").magnificPopup({
   type: "image",
+  image: {
+    titleSrc: 'title'
+  },
   gallery: {
     enabled: true,
   },
@@ -117,7 +120,9 @@ const swiper = new Swiper(".journeySwiper", {
   spaceBetween: 80,
   // loop: true,
   speed: 700,
-
+  autoplay: {
+    delay: 3000
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.2,
@@ -125,7 +130,7 @@ const swiper = new Swiper(".journeySwiper", {
     768: {
       slidesPerView: 7,
     },
-    
+
     1200: {
       slidesPerView: 5,
     },
@@ -136,7 +141,7 @@ const swiper = new Swiper(".journeySwiper", {
       slidesPerView: 7,
     },
   },
-});const testimonialSwiper = new Swiper(".testimonialSwiper", {
+}); const testimonialSwiper = new Swiper(".testimonialSwiper", {
 
   slidesPerView: 1.2,
 
@@ -151,7 +156,10 @@ const swiper = new Swiper(".journeySwiper", {
   // autoplay: {
   //   delay: 4000
   // },
-
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   breakpoints: {
 
     768: {
@@ -162,7 +170,7 @@ const swiper = new Swiper(".journeySwiper", {
       slidesPerView: 2.6
     }
   }
-});const awardsSwiper = new Swiper(".awards-swiper", {
+}); const awardsSwiper = new Swiper(".awards-swiper", {
 
   slidesPerView: 3,
 
@@ -175,6 +183,27 @@ const swiper = new Swiper(".journeySwiper", {
   // autoplay: {
   //   delay: 3000
   // },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
- 
+}); const bankerSwiper = new Swiper(".banker-swiper", {
+
+  slidesPerView: 7,
+
+  loop: true,
+
+  speed: 700,
+
+  spaceBetween: 30,
+
+  autoplay: {
+    delay: 3000
+  }, pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+
 });
