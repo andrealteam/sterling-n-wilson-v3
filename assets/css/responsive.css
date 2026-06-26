@@ -216,6 +216,8 @@
     padding: 15px;
   }.awards-card h5{
     font-size: 12px;
+  }.spread-award .awards-card h5{
+font-size: 15px;
   }
 }
 
