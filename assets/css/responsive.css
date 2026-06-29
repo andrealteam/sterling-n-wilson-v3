@@ -440,7 +440,13 @@ height: 64.78px;
 }
 
 @media (max-width: 991px) {
-
+ .navbar-brand img {
+    height: 55px;
+  }    .banner-section {
+        padding-top: 80px;
+    }.banner-text-wrapper{
+padding: 0 48px;text-align: center;
+    }
   .side-menu {
     position: fixed;
     left: 0;
@@ -498,6 +504,8 @@ height: 64.78px;
 
   .header-overlay.show {
     transform: translateX(0%);
+  }.about-text{
+    position: unset;width: 100%;padding: 0 36px;
   }
 
 
