@@ -116,12 +116,11 @@ const swiper = new Swiper(".journeySwiper", {
   slidesPerView: 7,
   centeredSlides: true,
   slideToClickedSlide: true,
-
   spaceBetween: 80,
-  // loop: true,
   speed: 700,
   autoplay: {
-    delay: 3000
+    delay: 3000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     320: {
@@ -130,7 +129,6 @@ const swiper = new Swiper(".journeySwiper", {
     768: {
       slidesPerView: 7,
     },
-
     1200: {
       slidesPerView: 5,
     },
@@ -141,7 +139,23 @@ const swiper = new Swiper(".journeySwiper", {
       slidesPerView: 7,
     },
   },
-}); const testimonialSwiper = new Swiper(".testimonialSwiper", {
+});
+
+const journeysSection = document.querySelector(".journeys");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      swiper.autoplay.start();
+    } else {
+      swiper.autoplay.stop();
+    }
+  });
+}, {
+  threshold: 0.3,
+});
+
+observer.observe(journeysSection);const testimonialSwiper = new Swiper(".testimonialSwiper", {
 
   slidesPerView: 1.2,
 
