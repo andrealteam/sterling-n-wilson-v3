@@ -1313,7 +1313,7 @@ main {
 }
 
 .circles-bg img {
-    animation: spin 100s linear infinite;
+    /* animation: spin 100s linear infinite; */
 }
 
 @keyframes spin {
@@ -1335,8 +1335,8 @@ main {
 }
 
 .sol-wrapper .key-box img {
-    width: 100px !important;
-    margin-bottom: 25px;
+    height: 100px !important;
+    margin-bottom: 25px;width: auto!important;
 }
 
 .sol-wrapper .key-box:nth-child(2) {
@@ -2562,7 +2562,7 @@ width: 100%;
             display: inline-flex;
             align-items: center;
             gap: 45px;
-            background: #fff;margin-top: 35px;
+            background: #fff;margin-bottom: 35px;
         }
 
         .legend-item {
