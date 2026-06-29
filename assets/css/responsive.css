@@ -53,11 +53,27 @@
   .about-text {
     top: 8%;
   }
+
+  .custom-container2 {
+    padding-left: 116.5px;
+  }
+
+  .custom-container3 {
+    padding-right: 116.5px;
+  }
 }
 
 @media (max-width: 1750px) {
   .about-text {
     top: 6%;
+  }
+
+  .custom-container2 {
+    padding-left: 91.5px;
+  }
+
+  .custom-container3 {
+    padding-right: 91.5px;
   }
 }
 
@@ -110,11 +126,23 @@
   .core-icon {
     width: 150px;
     height: 150px;
-  }.ststaa h3 span{
+  }
+
+  .ststaa h3 span {
     font-size: 30px;
-  }.ststaa h3 {
+  }
+
+  .ststaa h3 {
     font-size: 18px;
-}
+  }
+
+  .custom-container2 {
+    padding-left: 66.5px;
+  }
+
+  .custom-container3 {
+    padding-right: 66.5px;
+  }
 }
 
 @media (max-width: 1650px) {
@@ -136,9 +164,19 @@
 
   .chairman-quote-card blockquote {
     font-size: 18px;
-  }#chartdiv {
+  }
+
+  #chartdiv {
     height: 460px;
-}
+  }
+
+  .custom-container2 {
+    padding-left: 165px;
+  }
+
+  .custom-container3 {
+    padding-right: 165px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -156,10 +194,22 @@
 
   .sol-road {
     left: -30%;
-  }.timeline-content li::before{
+  }
+
+  .timeline-content li::before {
     width: 64.75px;
-  }.c-padding{
-    padding: 35px!important;
+  }
+
+  .c-padding {
+    padding: 35px !important;
+  }
+
+  .custom-container2 {
+    padding-left: 140px;
+  }
+
+  .custom-container3 {
+    padding-right: 140px;
   }
 }
 
@@ -184,6 +234,14 @@
 
   .core-icon img {
     width: 50px;
+  }
+
+  .custom-container2 {
+    padding-left: 90px;
+  }
+
+  .custom-container3 {
+    padding-right: 90px;
   }
 }
 
@@ -306,12 +364,21 @@
   .spread-award .awards-card h5 {
     font-size: 15px;
   }
+
+  .custom-container2 {
+    padding-left: 60px;
+  }
+
+  .custom-container3 {
+    padding-right: 60px;
+  }
 }
 
 @media (max-width: 1400px) {
-.ststaa{
-  padding: 15px;
-}
+  .ststaa {
+    padding: 15px;
+  }
+
   .senior-box {
     gap: 5px !important;
   }
@@ -322,9 +389,19 @@
 
   .sol-road {
     left: -32%;
-  }    #chartdiv {
-        height: 440px;
-    }
+  }
+
+  #chartdiv {
+    height: 440px;
+  }
+
+  .custom-container2 {
+    padding-left: 40px;
+  }
+
+  .custom-container3 {
+    padding-right: 40px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -334,9 +411,19 @@
 
   .sol-road {
     left: -36%;
-  }    #chartdiv {
-        height: 420px;
-    }
+  }
+
+  #chartdiv {
+    height: 420px;
+  }
+
+  .custom-container2 {
+    padding-left: 34px;
+  }
+
+  .custom-container3 {
+    padding-right: 34px;
+  }
 }
 
 @media (max-width: 991px) {
