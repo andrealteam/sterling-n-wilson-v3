@@ -158,6 +158,8 @@
     left: -30%;
   }.timeline-content li::before{
     width: 64.75px;
+  }.c-padding{
+    padding: 35px!important;
   }
 }
 
