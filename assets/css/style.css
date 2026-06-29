@@ -2921,7 +2921,12 @@ main {
     background: var(--primary-color);
     flex-shrink: 0;
 }
-
+.high-four-row .high-line{
+height: 44px;
+}
+.high-three-row .high-line{
+height: 43.19px;
+}
 .high-four {
     /* width: 24%; */
     padding: 0 25px;
