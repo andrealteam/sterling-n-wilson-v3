@@ -44,66 +44,147 @@
   }
 
 }
+
 @media (max-width: 1800px) {
-  .banner-section h1{
+  .banner-section h1 {
     font-size: 85px;
-  }.about-text{
+  }
+
+  .about-text {
     top: 8%;
   }
 }
+
 @media (max-width: 1750px) {
-  .about-text{
+  .about-text {
     top: 6%;
   }
 }
+
 @media (max-width: 1700px) {
-  .banner-section h1{
+  .banner-section h1 {
     font-size: 80px;
-  }.key-box h3 {
+  }
+
+  .key-box h3 {
     font-size: 25px;
-}.key-box h3 span {
+  }
+
+  .key-box h3 span {
     font-size: 40px;
-}.bg-title{
-  font-size: 2.7rem;
-}.awards-text{
+  }
+
+  .bg-title {
+    font-size: 2.7rem;
+  }
+
+  .awards-text {
     padding: 25px 10px;
-  }.awards-card h5{
+  }
+
+  .awards-card h5 {
     font-size: 13px;
-  }.senior-box{
-    gap: 10px!important;
-  }.senior-cards{
+  }
+
+  .senior-box {
+    gap: 10px !important;
+  }
+
+  .senior-cards {
     padding-left: 15px;
-  }.sol-road{
+  }
+
+  .sol-road {
     left: -25%;
   }
+
+  .node-content p {
+    font-size: 14px;
+  }
+
+  .core-rings {
+    width: 300px;
+    height: 300px;
+  }
+
+  .core-icon {
+    width: 150px;
+    height: 150px;
+  }.ststaa h3 span{
+    font-size: 30px;
+  }.ststaa h3 {
+    font-size: 18px;
+}
 }
 
 @media (max-width: 1650px) {
-   .banner-section h1{
+  .banner-section h1 {
     font-size: 75px;
-  }.about-text{
+  }
+
+  .about-text {
     top: 5%;
-  }.high {
-    font-size: 18px;}.chairman-stat-card{padding: 25px;}.chairman-quote-card blockquote{font-size: 18px;}
+  }
+
+  .high {
+    font-size: 18px;
+  }
+
+  .chairman-stat-card {
+    padding: 25px;
+  }
+
+  .chairman-quote-card blockquote {
+    font-size: 18px;
+  }#chartdiv {
+    height: 460px;
+}
 }
 
 @media (max-width: 1600px) {
-    .banner-section h1{
+  .banner-section h1 {
     font-size: 70px;
-  }.chairman-icon img {
+  }
+
+  .chairman-icon img {
     width: 690px;
-}.senior-box .senior-icon {
-    width: 20px;}    .sol-road {
-        left: -30%;
-    }
+  }
+
+  .senior-box .senior-icon {
+    width: 20px;
+  }
+
+  .sol-road {
+    left: -30%;
+  }.timeline-content li::before{
+    width: 64.75px;
+  }
 }
 
 @media (max-width: 1500px) {
   .high {
-    font-size: 16px;}.chairman-icon img {
+    font-size: 16px;
+  }
+
+  .chairman-icon img {
     width: 700px;
+  }
+
+  .core-rings {
+    width: 250px;
+    height: 250px;
+  }
+
+  .core-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .core-icon img {
+    width: 50px;
+  }
 }
-}
+
 @media (max-width: 1440px) {
 
   .navbar-brand img {
@@ -202,13 +283,7 @@
     padding: 10px;
   }
 
-  .service-node {
-    width: 30%;
-  }
 
-  .services-network {
-    height: 530px;
-  }
 
   .ceo-head h2 {
     font-size: 2.5rem;
@@ -216,30 +291,49 @@
 
   .custom-container3 {
     padding-right: 59.5px;
-  }.senior-cards{
+  }
+
+  .senior-cards {
     padding: 15px;
-  }.awards-card h5{
+  }
+
+  .awards-card h5 {
     font-size: 12px;
-  }.spread-award .awards-card h5{
-font-size: 15px;
+  }
+
+  .spread-award .awards-card h5 {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 1400px) {
-  .senior-box{
-    gap: 5px!important;
-  }.senior-box .senior-icon {
+.ststaa{
+  padding: 15px;
+}
+  .senior-box {
+    gap: 5px !important;
+  }
+
+  .senior-box .senior-icon {
     width: 15px;
-  }.sol-road {
-        left: -32%;
+  }
+
+  .sol-road {
+    left: -32%;
+  }    #chartdiv {
+        height: 440px;
     }
 }
 
 @media (max-width: 1300px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 14px;
-  }    .sol-road {
-        left: -36%;
+  }
+
+  .sol-road {
+    left: -36%;
+  }    #chartdiv {
+        height: 420px;
     }
 }
 
