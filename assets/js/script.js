@@ -153,9 +153,9 @@ const swiper = new Swiper(".journeySwiper", {
 
   spaceBetween: 30,
 
-  // autoplay: {
-  //   delay: 4000
-  // },
+  autoplay: {
+    delay: 4000
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -180,9 +180,9 @@ const swiper = new Swiper(".journeySwiper", {
 
   spaceBetween: 30,
 
-  // autoplay: {
-  //   delay: 3000
-  // },
+  autoplay: {
+    delay: 3000
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
