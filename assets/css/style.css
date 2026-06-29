@@ -168,10 +168,6 @@ main {
     background: var(--lightgrey) !important;
 }
 
-.banner-section {
-    /* text-align: center; */
-}
-
 .banner-section h1 {
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -194,6 +190,7 @@ main {
     background: url("../images/banner/banner-bg.webp")no-repeat top center;
     background-size: cover;
     padding-top: 70px;
+    overflow: hidden;
 }
 
 .banner-text {
@@ -215,7 +212,8 @@ main {
 }
 
 .key-box img {
-    width: 60px;margin-bottom: 5px;
+    width: 60px;
+    margin-bottom: 5px;
     /* margin-bottom: 10px; */
 }
 
@@ -862,10 +860,7 @@ main {
     opacity: .15;
 }
 
-.testimonial-card p {
-
-   
-}
+.testimonial-card p {}
 
 .testimonial-footer h5 {
     background: var(--gradient);
@@ -1235,12 +1230,13 @@ main {
 
 .line-para {
     padding-left: 25px;
-    border-left: 3px solid var(--primary-color);
-  
+    border-left: 1px solid var(--primary-color);
+
 }
 
 .line-para h3 {
-    font-weight: 600;  font-size: 34px;
+    font-weight: 600;
+    font-size: 34px;
     line-height: 1.3;
 }
 
@@ -1296,7 +1292,7 @@ main {
     position: relative;
 }
 
-.purp-box::before{
+.purp-box::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1367,7 +1363,7 @@ main {
 
 .sol-road {
     top: 0;
-    left: -10%;
+    left: -12%;
     height: 100%;
 }
 
@@ -1597,7 +1593,7 @@ main {
 .timeline-item::before {
     content: '';
     position: absolute;
-    top:17px;
+    top: 17px;
     width: 34px;
     height: 34px;
     background: url(../images/icons/star-2.png)no-repeat center;
@@ -1640,17 +1636,28 @@ main {
 }
 
 .timeline-content li {
-   padding: 5px 0; 
+    padding: 5px 0;
     line-height: 1.7;
     font-size: 14px;
-    display: block;position: relative;
+    display: block;
+    position: relative;
 }
-.timeline-content li::before{
+
+.timeline-content li::before {
     content: '';
-    position: absolute;top: 0;left: 0;height: 1px;background: var(--primary-color);width: 75.88px;
-}.left .timeline-content li::before{
-    left: unset;right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background: var(--primary-color);
+    width: 75.88px;
 }
+
+.left .timeline-content li::before {
+    left: unset;
+    right: 0;
+}
+
 .journey-solar img {
     width: 400px;
 }
@@ -2498,14 +2505,14 @@ main {
 
 
 .highlight-item {
-/* 
+    /* 
     height:100%; */
 
     /* padding: 15px 25px; */
 
     position: relative;
     /* background: #ffffff73; */
-/* border-radius: 20px; */
+    /* border-radius: 20px; */
     transition: .3s;
     /* aspect-ratio: 1;
     display: flex; */
@@ -2519,7 +2526,7 @@ main {
 
     transform: translateY(-4px);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, .08); */
 }
 
 .highlight-item strong {
@@ -2528,8 +2535,8 @@ main {
 
     color: var(--primary-color);
 
-    font-size: 25px;
-
+    font-size: 20px;
+    line-height: 1;
 
     font-weight: 800;
 }
@@ -2906,4 +2913,26 @@ main {
 
     border-radius: 50%;
 
+}
+
+.high-line {
+    height: 50px;
+    width: 1px;
+    background: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.high-four {
+    /* width: 24%; */
+    padding: 0 25px;
+}
+
+.high-three {
+    /* width: 32%; */
+    padding: 0 25px;
+}
+
+.high-two {
+    /* width: 49%; */
+   padding: 0 25px;
 }
