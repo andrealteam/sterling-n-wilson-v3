@@ -73,6 +73,8 @@
     gap: 10px!important;
   }.senior-cards{
     padding-left: 15px;
+  }.sol-road{
+    left: -25%;
   }
 }
 
@@ -82,7 +84,7 @@
   }.about-text{
     top: 5%;
   }.high {
-    font-size: 18px;}
+    font-size: 18px;}.chairman-stat-card{padding: 25px;}.chairman-quote-card blockquote{font-size: 18px;}
 }
 
 @media (max-width: 1600px) {
@@ -226,13 +228,17 @@ font-size: 15px;
     gap: 5px!important;
   }.senior-box .senior-icon {
     width: 15px;
-  }
+  }.sol-road {
+        left: -27%;
+    }
 }
 
 @media (max-width: 1300px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 14px;
-  }
+  }    .sol-road {
+        left: -32%;
+    }
 }
 
 @media (max-width: 991px) {
