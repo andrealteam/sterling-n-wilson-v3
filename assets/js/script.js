@@ -74,7 +74,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     });
   });
+gsap.utils.toArray(".bounce-text").forEach((el) => {
 
+  ScrollTrigger.create({
+    trigger: el,
+    start: "top 85%",
+    onEnter: () => {
+      gsap.fromTo(el,
+        {
+          scaleY: 0.5,
+          scaleX: 1.3,
+          y: 80,
+          opacity: 0
+        },
+        {
+          scaleY: 1,
+          scaleX: 1,
+          y: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "elastic.out(1, 0.4)"
+        }
+      );
+    }
+  });
+
+});
 });
 $(".navbar-toggler").on("click", function (e) {
   e.preventDefault();
@@ -121,10 +146,10 @@ const swiper = new Swiper(".journeySwiper", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  },pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
+  }, pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.2,
@@ -215,3 +240,4 @@ observer.observe(journeysSection); const testimonialSwiper = new Swiper(".testim
   }
 
 });
+
