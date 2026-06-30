@@ -434,7 +434,7 @@ main {
 
 .body-message {
     padding: 35px;
-    background: #ffffff;
+    /* background: #ffffff; */
 }
 
 .body-message h4 {
@@ -461,7 +461,7 @@ main {
 .first-modal .modal-body {
     padding: 0;
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 
@@ -2939,4 +2939,8 @@ height: 43.19px;
 .high-two {
     /* width: 49%; */
    padding: 0 25px;
+}.btn-close{
+    position: absolute;   top: 18px;
+    right: 23px;z-index: 9999;
+
 }

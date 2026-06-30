@@ -319,7 +319,6 @@
 
   .body-message {
     padding: 25px 25px;
-    background: #ffffffcb;
   }
 
   .modal-quote {
@@ -681,10 +680,6 @@
 
   .service-block .w-50 {
     width: 100% !important;
-  }
-
-  .body-message {
-    background: #fff;
   }
 
   .point img {
