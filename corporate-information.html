@@ -23,7 +23,7 @@
 </head>
 
 <body>
-      <header id="header">
+    <header id="header">
         <div class="custom-container">
             <nav class="navbar navbar-expand-lg navbar-light align-items-center">
                 <!-- Logo -->
@@ -110,7 +110,7 @@
                         <div class="mb-4">
                             <h4 class="text-orange fw-bold text-center">Senior Management</h4>
                         </div>
-                        <div class="row">
+                        <div class="row gy-4">
                             <div class="col-lg-4">
                                 <div class="senior-cards bg-lights">
                                     <div class="senior-box d-flex gap-3">
@@ -323,7 +323,7 @@
                         <img src="./assets/images/pattern1.png" alt="" class="w-100">
                     </div>
                     <div class="custom-container position-relative z-1">
-                        <div class="row g-4">
+                        <div class="row gy-4">
 
                             <!-- Registered Office -->
                             <div class="col-lg-4">
@@ -561,6 +561,39 @@
     <script src="./assets/js/script.js" defer></script>
     <script>
         feather.replace();
+        const bankerSwiper = new Swiper(".banker-swiper", {
+
+            slidesPerView: 1,
+
+            loop: true,
+
+            speed: 700,
+
+            spaceBetween: 30,
+
+            autoplay: {
+                delay: 3000
+            }, pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }, breakpoints: {
+
+                768: {
+                    slidesPerView: 3
+                },
+
+                1200: {
+                    slidesPerView: 3
+                }, 1400: {
+                    slidesPerView: 5
+                },
+                1700: {
+                    slidesPerView: 7
+                }
+            }
+
+
+        });
     </script>
 
 </body>
