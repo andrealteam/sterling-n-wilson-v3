@@ -1029,7 +1029,6 @@ main {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .awards-card img {
@@ -1923,7 +1922,7 @@ main {
     border-color: var(--primary-color);
 }
 
-.banker-swiper .swiper-pagination-bullet {
+.banker-swiper .swiper-pagination-bullet, .journeySwiper .swiper-pagination-bullet {
     background: var(--primary-color);
     opacity: 0.5;
     width: 0.7rem;
@@ -1932,7 +1931,7 @@ main {
     border-radius: 2rem;
 }
 
-.banker-swiper .swiper-pagination-bullet-active {
+.banker-swiper .swiper-pagination-bullet-active, .journeySwiper .swiper-pagination-bullet-active {
     opacity: 1;
     width: 2rem;
 }
