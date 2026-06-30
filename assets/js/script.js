@@ -121,13 +121,16 @@ const swiper = new Swiper(".journeySwiper", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  },
+  },pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
   breakpoints: {
     320: {
       slidesPerView: 1.2,
     },
-    768: {
-      slidesPerView: 7,
+    600: {
+      slidesPerView: 3,
     },
     1200: {
       slidesPerView: 5,
@@ -155,7 +158,7 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.3,
 });
 
-observer.observe(journeysSection);const testimonialSwiper = new Swiper(".testimonialSwiper", {
+observer.observe(journeysSection); const testimonialSwiper = new Swiper(".testimonialSwiper", {
 
   slidesPerView: 1.2,
 
@@ -186,7 +189,7 @@ observer.observe(journeysSection);const testimonialSwiper = new Swiper(".testimo
   }
 }); const awardsSwiper = new Swiper(".awards-swiper", {
 
-  slidesPerView: 3,
+  slidesPerView: 1,
 
   loop: true,
 
@@ -200,24 +203,15 @@ observer.observe(journeysSection);const testimonialSwiper = new Swiper(".testimo
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  }, breakpoints: {
 
-}); const bankerSwiper = new Swiper(".banker-swiper", {
+    768: {
+      slidesPerView: 2
+    },
 
-  slidesPerView: 7,
-
-  loop: true,
-
-  speed: 700,
-
-  spaceBetween: 30,
-
-  autoplay: {
-    delay: 3000
-  }, pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-
+    1200: {
+      slidesPerView: 3
+    }
+  }
 
 });
