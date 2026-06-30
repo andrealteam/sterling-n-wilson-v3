@@ -23,7 +23,7 @@
 </head>
 
 <body>
-      <header id="header">
+    <header id="header">
         <div class="custom-container">
             <nav class="navbar navbar-expand-lg navbar-light align-items-center">
                 <!-- Logo -->
@@ -79,12 +79,11 @@
                             Key Highlights
                         </h2>
 
-
                         <div class="key-wrapper mt-0">
                             <div class="key-box text-center">
                                 <img src="./assets/images/icons/solar-panel.png" alt="">
                                 <h3>
-                                    <span class="counter">27.3</span>
+                                    <span class="counter" data-count="27.3">0</span>
                                     GWp
                                 </h3>
                                 <p>Global Engineering Procurement Construction Portfolio</p>
@@ -92,7 +91,7 @@
                             <div class="key-box text-center">
                                 <img src="./assets/images/icons/technical-support.png" alt="">
                                 <h3>
-                                    <span class="counter">13.5</span>
+                                    <span class="counter" data-count="13.5">0</span>
                                     GWp
                                 </h3>
                                 <p>Operations & Maintenance Portfolio</p>
@@ -100,21 +99,21 @@
                             <div class="key-box text-center">
                                 <img src="./assets/images/icons/people.png" alt="">
                                 <h3>
-                                    <span class="counter">3,459</span>
+                                    <span class="counter" data-count="3459">0</span>
                                 </h3>
                                 <p>Global Manpower</p>
                             </div>
                             <div class="key-box text-center">
                                 <img src="./assets/images/icons/work-table.png" alt="">
                                 <h3>
-                                    <span class="counter">6</span>
+                                    <span class="counter" data-count="6">0</span>
                                 </h3>
                                 <p>Offices</p>
                             </div>
                             <div class="key-box text-center">
                                 <img src="./assets/images/icons/placeholder.png" alt="">
                                 <h3>
-                                    <span class="counter">28</span>
+                                    <span class="counter" data-count="28">0</span>
                                     +
                                 </h3>
                                 <p>Locations</p>
@@ -123,7 +122,7 @@
                                 <img src="./assets/images/icons/project.png" alt="">
                                 <h3>
                                     Projects in
-                                    <span class="counter">20</span>
+                                    <span class="counter" data-count="20">0</span>
                                 </h3>
                                 <p>Countries</p>
                             </div>
@@ -147,7 +146,7 @@
                     <div class="container position-relative z-1">
 
 
-                        <h2 class="main-title text-center">Investment Case</h2>
+                        <h2 class="main-title text-center bounce-text">Investment Case</h2>
 
 
                         <div class="investment-wrapper">
@@ -281,6 +280,85 @@
     <script src="./assets/js/script.js" defer></script>
     <script>
         feather.replace();
+        document.addEventListener("DOMContentLoaded", () => {
+
+  const counters = document.querySelectorAll(".counter");
+
+  function animateCounter(counter) {
+
+    // Prevent running twice
+    if (counter.dataset.started === "true") return;
+    counter.dataset.started = "true";
+
+    const target = parseFloat(counter.dataset.count);
+    const duration = 2000;
+    const startTime = performance.now();
+
+    // Number of decimal places in target
+    const decimalPart = counter.dataset.count.split(".")[1];
+    const decimals = decimalPart ? decimalPart.length : 0;
+
+    function update(currentTime) {
+
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Ease-out animation
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+      const currentValue = target * easedProgress;
+
+      counter.textContent = currentValue.toLocaleString(undefined, {
+        minimumFractionDigits: progress === 1 ? decimals : 0,
+        maximumFractionDigits: decimals
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        // Ensure exact final value
+        counter.textContent = target.toLocaleString(undefined, {
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals
+        });
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  const observer = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+
+    });
+
+  }, {
+    threshold: 0.1
+  });
+
+  // Observe or trigger immediately if already visible
+  counters.forEach(counter => {
+
+    const rect = counter.getBoundingClientRect();
+
+    if (
+      rect.top < window.innerHeight &&
+      rect.bottom > 0
+    ) {
+      animateCounter(counter);
+    } else {
+      observer.observe(counter);
+    }
+
+  });
+
+});
     </script>
 
 </body>
